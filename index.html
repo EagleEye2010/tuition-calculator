@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Arete Tuition Generator Created By Eli V., 2024. -->
+<!-- If you would like a website, calculator, or mobile app similar to this, -->
+<!-- Please email EliVanV2010@hotmail.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arete Tuition Calculator</title>
+  <!-- Icon for the window -->
+  <link rel="icon" href="https://img1.wsimg.com/isteam/ip/c0c8ca11-9b98-4db9-a24d-5cadc1245515/favicon/f63606a6-402e-4067-b28c-be44ecef725e.png">
+
+  <!-- All styling for the website -->
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .st,#calc {
+      border: none;
+      background-color:#cccccc;
+      width: 100px;
+      height: 50px;
+      font-size: large;
+    }
+
+    #calc:hover{
+      background-color:#adadad;
+      cursor: pointer;
+    }
+
+    .st:hover{
+      background-color:#adadad;
+      cursor: pointer;
+    }
+
+    #stabl {
+      border: 3px solid #06D001;
+      background-color:#9BEC00;
+      margin-top:30px;
+      margin-left:30px;
+    }
+    td {
+      padding-right: 50px;
+    }
+    #calc {
+      float:right;
+      margin-top:10px;
+    }
+
+    table {
+      background-color: #06D001;
+    }
+    #lunch {
+      border:none;
+      width:20px;
+      height:20px;
+      color:green;
+    }
+  </style>
+</head>
+<body>
+  <h3>Arete Tuition Calculator</h3>
+  <p>To use: select every class for each of your students. Your cost of tuition (including material costs) will be calculated.</p>
+  <br>
+
+  <!--Calculate costs button-->
+  <button id="calc" onclick="calculate();">Calculate Tuition</button>
+
+  <!--Student tab "STAB"-->
+  <div id="stab">
+    <p id="result">Click calculate to present the costs of your tuition.</p>
+    <p id="current">Current student selected: 1</p>
+    <p>Will your student be here for lunch?: <input id="lunch" type="checkbox"></p>
+  </div>
+
+  <!-- Import my script -->
+  <script src="script.js"></script>
+
+  <footer>2024 Eli V.</footer>
+</body>
+</html>
